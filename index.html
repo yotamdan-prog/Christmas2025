@@ -21,14 +21,24 @@
             if (code === '845') 
 	{
                 document.getElementById('secretContent').style.display = 'block';
-            	}
+
+			                document.getElementById('secretContent2').style.display = 'none';
+
+    }
+				
 	else if (code === '999') 
 	{
 	                document.getElementById('secretContent2').style.display = 'block';
+
+		document.getElementById('secretContent').style.display = 'none';
 	}
 	else 
 	{
                 alert('Wrong code! Try again.');
+
+		document.getElementById('secretContent').style.display = 'none';
+        document.getElementById('secretContent2').style.display = 'none';
+
             	}
         }
     </script>
@@ -61,4 +71,5 @@
 
 </body>
 </html>
+
 
